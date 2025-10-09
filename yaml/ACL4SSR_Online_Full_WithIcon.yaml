@@ -17,7 +17,7 @@ proxy-groups:
     include-all: true
     type: select
   - name: 自动选择
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Auto.png
     type: url-test
     include-all: true
     interval: 300
@@ -51,7 +51,7 @@ proxy-groups:
       - 手动切换
       - DIRECT
   - name: 油管视频
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube_Letter.png
     type: select
     proxies:
       - 节点选择
@@ -65,7 +65,7 @@ proxy-groups:
       - 手动切换
       - DIRECT
   - name: 奈飞视频
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix_Letter.png
     type: select
     proxies:
       - 节点选择
@@ -88,7 +88,7 @@ proxy-groups:
       - 手动切换
       - DIRECT
   - name: 哔哩哔哩
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/bilibili_4.png
     type: select
     proxies:
       - 全球直连
@@ -281,7 +281,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
   - name: 奈飞节点
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix_Letter.png
     include-all: true
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
     type: select
