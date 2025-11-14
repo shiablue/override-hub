@@ -349,6 +349,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  GoogleAI:
+    url: https://raw.githubusercontent.com/shiablue/override-hub/refs/heads/main/ruleset/GoogleAi.list
+    path: ./ruleset/GoogleAi.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   GoogleFCM:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
     path: ./ruleset/GoogleFCM.list
@@ -537,6 +544,7 @@ rules:
   - "RULE-SET,UnBan,全球直连"
   - "RULE-SET,BanAD,广告拦截"
   - "RULE-SET,BanProgramAD,应用净化"
+  - "RULE-SET,GoogleAI,谷歌AI"
   - "RULE-SET,GoogleFCM,谷歌FCM"
   - "RULE-SET,GoogleCN,全球直连"
   - "RULE-SET,SteamCN,全球直连"
