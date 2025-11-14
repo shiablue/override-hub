@@ -36,7 +36,7 @@ proxy-groups:
       - 韩国节点
       - 手动切换
       - DIRECT
-  - name: OpenAi
+  - name: OpenAI
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
@@ -117,6 +117,19 @@ proxy-groups:
       - 台湾节点
       - 狮城节点
       - 日本节点
+      - 手动切换
+  - name: 谷歌AI
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 日本节点
+      - 韩国节点
       - 手动切换
   - name: 谷歌FCM
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
@@ -294,7 +307,7 @@ proxy-groups:
       - 手动切换
       - 自动选择
       - 电报消息
-      - OpenAi
+      - OpenAI
       - 油管视频
       - 奈飞视频
       - 巴哈姆特
@@ -413,7 +426,7 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  OpenAi:
+  OpenAI:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
     path: ./ruleset/OpenAi.list
     behavior: classical
@@ -554,7 +567,7 @@ rules:
   - "RULE-SET,Microsoft,微软服务"
   - "RULE-SET,Apple,苹果服务"
   - "RULE-SET,Telegram,电报消息"
-  - "RULE-SET,OpenAi,OpenAi"
+  - "RULE-SET,OpenAI,OpenAI"
   - "RULE-SET,NetEaseMusic,网易音乐"
   - "RULE-SET,Epic,游戏平台"
   - "RULE-SET,Origin,游戏平台"
