@@ -118,8 +118,8 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 手动切换
-  - name: 谷歌AI
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+  - name: AI
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AI.png
     type: select
     proxies:
       - DIRECT
@@ -314,7 +314,7 @@ proxy-groups:
       - 哔哩哔哩
       - 国外媒体
       - 国内媒体
-      - 谷歌AI
+      - AI
       - 谷歌FCM
       - 微软Bing
       - 微软云盘
@@ -363,9 +363,9 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  GoogleAI:
-    url: https://raw.githubusercontent.com/shiablue/override-hub/refs/heads/main/ruleset/GoogleAi.list
-    path: ./ruleset/GoogleAi.list
+  AI:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
+    path: ./ruleset/AI.list
     behavior: classical
     interval: 86400
     format: text
@@ -558,7 +558,7 @@ rules:
   - "RULE-SET,UnBan,全球直连"
   - "RULE-SET,BanAD,广告拦截"
   - "RULE-SET,BanProgramAD,应用净化"
-  - "RULE-SET,GoogleAI,谷歌AI"
+  - "RULE-SET,AI,AI"
   - "RULE-SET,GoogleFCM,谷歌FCM"
   - "RULE-SET,GoogleCN,全球直连"
   - "RULE-SET,SteamCN,全球直连"
