@@ -115,7 +115,6 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
     proxies:
-      - DIRECT
       - 手动切换
       - 美国节点
       - 香港节点
@@ -123,11 +122,11 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 韩国节点
+      - DIRECT
   - name: 微软Bing
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
     type: select
     proxies:
-      - DIRECT
       - 手动切换
       - 美国节点
       - 香港节点
@@ -135,11 +134,11 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 韩国节点
+      - DIRECT
   - name: 微软云盘
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
     type: select
     proxies:
-      - DIRECT
       - 手动切换
       - 美国节点
       - 香港节点
@@ -147,6 +146,7 @@ proxy-groups:
       - 狮城节点
       - 日本节点
       - 韩国节点
+      - DIRECT
   - name: 微软服务
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
