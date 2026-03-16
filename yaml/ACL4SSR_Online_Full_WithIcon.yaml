@@ -1,17 +1,4 @@
 proxy-groups:
-  - name: 节点选择
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
-    type: select
-    proxies:
-      - 自动选择
-      - 手动切换
-      - 香港节点
-      - 台湾节点
-      - 狮城节点
-      - 日本节点
-      - 美国节点
-      - 韩国节点
-      - DIRECT
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
@@ -26,9 +13,8 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     type: select
     proxies:
-      - 节点选择
-      - 自动选择
       - 手动切换
+      - 自动选择
       - 狮城节点
       - 香港节点
       - 台湾节点
@@ -40,9 +26,8 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
-      - 节点选择
-      - 自动选择
       - 手动切换
+      - 自动选择
       - 狮城节点
       - 香港节点
       - 台湾节点
@@ -54,9 +39,8 @@ proxy-groups:
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube_Letter.png
     type: select
     proxies:
-      - 节点选择
-      - 自动选择
       - 手动切换
+      - 自动选择
       - 狮城节点
       - 香港节点
       - 台湾节点
@@ -68,9 +52,8 @@ proxy-groups:
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix_Letter.png
     type: select
     proxies:
-      - 节点选择
-      - 自动选择
       - 手动切换
+      - 自动选择
       - 奈飞节点
       - 狮城节点
       - 香港节点
@@ -84,7 +67,6 @@ proxy-groups:
     type: select
     proxies:
       - 台湾节点
-      - 节点选择
       - 手动切换
       - DIRECT
   - name: 哔哩哔哩
@@ -98,9 +80,8 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
     type: select
     proxies:
-      - 节点选择
-      - 自动选择
       - 手动切换
+      - 自动选择
       - 香港节点
       - 台湾节点
       - 狮城节点
@@ -123,7 +104,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 节点选择
       - 手动切换
       - 美国节点
       - 香港节点
@@ -136,7 +116,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 节点选择
       - 手动切换
       - 美国节点
       - 香港节点
@@ -149,7 +128,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 节点选择
       - 手动切换
       - 美国节点
       - 香港节点
@@ -162,7 +140,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 节点选择
       - 手动切换
       - 美国节点
       - 香港节点
@@ -174,21 +151,19 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     proxies:
-      - 节点选择
       - 手动切换
-      - DIRECT
       - 美国节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 韩国节点
+      - DIRECT
   - name: 苹果服务
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
     type: select
     proxies:
       - DIRECT
-      - 节点选择
       - 手动切换
       - 美国节点
       - 香港节点
@@ -201,7 +176,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 节点选择
       - 手动切换
       - 美国节点
       - 香港节点
@@ -216,14 +190,12 @@ proxy-groups:
     filter: (?i)网易|音乐|NetEase|Music
     proxies:
       - DIRECT
-      - 节点选择
       - 自动选择
   - name: 全球直连
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
     proxies:
       - DIRECT
-      - 节点选择
       - 自动选择
   - name: 广告拦截
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
@@ -241,16 +213,15 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
     proxies:
-      - 节点选择
       - 手动切换
       - 自动选择
-      - DIRECT
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
       - 韩国节点
+      - DIRECT
   - name: 香港节点
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/HK.png
     include-all: true
@@ -303,9 +274,8 @@ proxy-groups:
     include-all: true
     type: select
     proxies:
-      - 节点选择
-      - 自动选择
       - 手动切换
+      - 自动选择
       - 电报消息
       - OpenAI
       - 油管视频
