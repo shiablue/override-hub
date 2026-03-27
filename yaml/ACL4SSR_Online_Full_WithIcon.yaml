@@ -522,12 +522,46 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  FanQieNovel:
+    url: https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Stash/ruleList/FanQieNovel.yaml
+    path: ./ruleset/FanQieNovel.yaml
+    behavior: domain
+    interval: 86400
+    format: yaml
+    type: http
+
+http:
+  mitm:
+    - "*.pangolin-sdk-toutiao"
+    - "*.pangolin-sdk-toutiao.*"
+    - "*.pstatp.com"
+    - "*.pstatp.com.*"
+    - "*.pglstatp-toutiao.com.*"
+    - "*.pglstatp-toutiao.com"
+    - "gurd.snssdk.com"
+    - "gurd.snssdk.com.*"
+    - "*default.ixigua.com"
+  rewrite:
+    - ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get-ads|stats|settings)\/ - reject
+    - ^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 - reject
+    - ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ - reject
+    - ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+ - reject
+    - ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer - reject
+    - ^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package - reject
+    - ^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg - reject
+    - ^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad - reject
+    - ^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track-log\/src\/.+ - reject
+    - ^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 - reject
+    - ^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ - reject
+    - ^http:\/\/.+\.byteimg\.com\/ad-app-package - reject
+    - ^http:\/\/.+\.byteimg\.com\/web\.business\.image - reject
 
 rules:
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
   - "RULE-SET,BanAD,广告拦截"
   - "RULE-SET,BanProgramAD,应用净化"
+  - "RULE-SET,FanQieNovel,广告拦截"
   - "RULE-SET,AI,AI"
   - "RULE-SET,GoogleFCM,谷歌FCM"
   - "RULE-SET,GoogleCN,全球直连"
